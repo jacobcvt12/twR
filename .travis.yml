@@ -3,3 +3,11 @@
 language: r
 warnings_are_errors: true
 sudo: required
+
+notifications:
+  email:
+    recipients:
+      - jacobcvt12@gmail.com
+      - cafletezbrant@gmail.com
+    on_success: always
+    on_failure: always
