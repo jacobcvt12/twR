@@ -2,7 +2,7 @@ Package: twr
 Title: Tracy-Widom Distribution
 Version: 0.0.0.9000
 Authors@R: person("First", "Last", email = "first.last@example.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
+Description: An R package for working with the Tracy-Widom Distribution
 Depends:
     R (>= 3.2.2)
 License: What license is it under?
