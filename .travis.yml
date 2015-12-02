@@ -1,13 +1,16 @@
-# Sample .travis.yml for R projects
-
+# use R
 language: r
-warnings_are_errors: true
 sudo: required
 
+# install GSL
+before_install:
+    - sudo apt-get install libgsl0ldbl
+
+# send notifications kipper and me
 notifications:
   email:
     recipients:
       - jacobcvt12@gmail.com
       - cafletezbrant@gmail.com
-    on_success: always
+    on_success: change
     on_failure: always
