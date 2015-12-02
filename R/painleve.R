@@ -9,8 +9,8 @@ deq <- function(t, y, parms) {
            y[1]))
 }
 
-t0 <- 5; tn <- -8
-tspan <- seq(t0, tn, length.out=1000)
+t0 <- 20; tn <- -20
+tspan <- seq(t0, tn, length.out=10000)
 y0 <- c(airy_Ai(t0),
         airy_Ai_deriv(t0),
         0,
@@ -18,3 +18,6 @@ y0 <- c(airy_Ai(t0),
         0)
 
 F.ode <- ode(y=y0, times=tspan, func=deq, parms=NULL, method="ode45")
+
+s <- F.ode[, "time"]
+F2 <- exp(-F.ode[, "3"])
