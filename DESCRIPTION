@@ -7,7 +7,7 @@ Depends:
     R (>= 3.2.2)
 Imports:
     gsl,
-    bvpSolve
+    deSolve
 License: GPL-3
 LazyData: true
 Suggests:
