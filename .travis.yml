@@ -14,3 +14,4 @@ notifications:
       - cafletezbrant@gmail.com
     on_success: change
     on_failure: always
+  slack: tracywidomr:ZcVrMGGGpPuba99sxvPVhNH2
